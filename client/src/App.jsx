@@ -20,9 +20,17 @@ function App() {
         setLoading(false);
       }, 2500);
     };
-    window.addEventListener("load", handleLoad);
+
+    const allContentLoaded = () => {
+      if (document.readyState === "complete") {
+        handleLoad();
+      }
+    };
+
+    document.addEventListener("readystatechange", allContentLoaded);
+    
     return () => {
-      window.removeEventListener("load", handleLoad);
+      document.removeEventListener("readystatechange", allContentLoaded);
     };
   }, []);
 
