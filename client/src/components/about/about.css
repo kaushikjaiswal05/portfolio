@@ -1,0 +1,144 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+.about img {
+  width: 425px;
+  height: 425px;
+  border-radius: 15px;
+  margin: 60px 80px 60px 0px;
+  filter: grayscale(75%);
+}
+
+.about .info {
+  width: 600px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.about .info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Cabin", sans-serif;
+}
+
+.about .info p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgb(131, 129, 129);
+  font-family: "Cabin", sans-serif;
+}
+
+.about .info .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about .info .btn {
+  width: auto;
+  height: 45px;
+  padding: 5px 30px;
+  border-radius: 30px;
+  margin-right: 50px;
+  margin-top: 10px;
+  border: none;
+  background-color: #fdec4f;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+
+.about .info .btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .info .btn span {
+  position: relative;
+  bottom: 3px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 40px;
+    flex-direction: column;
+  }
+  .about img {
+    width: 350px;
+    height: 350px;
+    margin: 0 0 30px 0;
+  }
+  .about .info {
+    width: 100%;
+    height: auto;
+  }
+  .about .info h1 {
+    font-size: 2rem;
+  }
+  .about .info p {
+    font-size: 0.8rem;
+  }
+  .about .info .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 30px;
+  }
+  .about img {
+    width: 300px;
+    height: 300px;
+  }
+  .about .info h1 {
+    font-size: 1.8rem;
+  }
+  .about .info p {
+    font-size: 0.7rem;
+  }
+  .about .info .btn {
+    padding: 8px 16px;
+  }
+  .about .info .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about {
+    padding: 20px;
+  }
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  .about .info h1 {
+    font-size: 1.5rem;
+  }
+  .about .info p {
+    font-size: 0.6rem;
+  }
+  .about .info .btn {
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,84 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  height: auto;
+  margin: 50px 0;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: "Cabin", sans-serif;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(131, 129, 129);
+    font-family: "Cabin", sans-serif;
+  }
+
+  .quote-btn {
+    background-color: #fdec4f;
+    color: #3a3a3a;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    font-family: "Cabin", sans-serif;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .quote h1 {
+    font-size: 1.5rem;
+  }
+  .quote p {
+    font-size: 0.8rem;
+  }
+  .quote .quote-btn {
+    font-size: 0.5rem;
+    padding: 14px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quote h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .quote p {
+    font-size: 0.7rem;
+  }
+  .quote .quote-btn {
+    font-size: 0.4rem;
+    padding: 12px 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+  .quote p {
+    font-size: 0.6rem;
+  }
+  .quote .quote-btn {
+    font-size: 0.3rem;
+    padding: 10px 20px;
+  }
+}
