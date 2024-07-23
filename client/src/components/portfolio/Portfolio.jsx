@@ -18,7 +18,7 @@ const portfolioItems = [
     image: "images/xapp.jpg",
     description:
       "Experience Twitter in a new way with my Twitter app clone. Built with React and Twitter Tweet Embed, it lets you browse and interact with tweets seamlessly. Enjoy a familiar interface with enhanced performance. Dive into the Twitterverse now!",
-    url: "https://github.com/kaushikjaiswal05/twitter-clone",
+    url: "https://github.com/kaushikjaiswal05/x-clone",
   },
   {
     id: 3,
