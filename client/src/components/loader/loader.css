@@ -61,11 +61,3 @@
     transform: scale(0);
   }
 }
-
-@media screen and (max-width: 768px) {
-
-  .loader-container {
-    display: none;
-  }
-  
-}
