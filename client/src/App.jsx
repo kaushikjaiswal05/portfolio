@@ -5,6 +5,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
+import Loader from "./components/loader/Loader";
 import Footer from "./components/footer/Footer";
 import Quote from "./components/quotes/Quotes";
 import Grained from "./components/grainyBackground/Grained";
@@ -38,7 +39,7 @@ function App() {
   };
 
   if (loading) {
-    return <div className="loader">Loading...</div>;
+    return <div className="loader"><Loader /></div>;
   }
 
   return (
