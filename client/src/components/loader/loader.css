@@ -27,7 +27,7 @@
   background: #fdec4f90;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   z-index: 1;
   scale: 1.2;
 }
