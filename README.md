@@ -14,3 +14,8 @@ Tools and Technologies Used:
 2. CSS3: For styling the website.
 3. Material UI/Icons: To add icons and Visual elements.
 4. Node/ Express: To add a backend to my website with the ability to fill out a contact form and submit it.
+5. Render.com / Netlify: For client and server-side web hosting.
+
+Link:
+
+https://kaushikjaiswal-portfolio.netlify.app
