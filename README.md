@@ -18,5 +18,5 @@ Tools and Technologies Used:
 
 Link:
 
-https://kaushikjaiswal05.github.io/portfolio
-https://kaushikjaiswal-portfolio.netlify.app
+1. Github pages - https://kaushikjaiswal05.github.io/portfolio
+2. Netlify - https://kaushikjaiswal-portfolio.netlify.app
