@@ -15,8 +15,8 @@ function About() {
   }, []);
   const download = () => {
     const link = document.createElement("a");
-    link.href = "/Kaushik-Jaiswal-resume.pdf";
-    link.download = "Kaushik-Jaiswal-resume.pdf";
+    link.href = "/Kaushik-Jaiswal-Resume.pdf";
+    link.download = "Kaushik-Jaiswal-Resume.pdf";
     link.click();
   };
 
