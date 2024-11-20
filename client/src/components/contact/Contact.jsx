@@ -51,7 +51,7 @@ function Contact() {
       if (result.success) {
         setSnackbar({
           open: true,
-          message: "Message sent successfully!",
+          message: "Form submitted successfully!",
           severity: "success",
         });
         setFormData({
@@ -64,14 +64,14 @@ function Contact() {
       } else {
         setSnackbar({
           open: true,
-          message: "Failed to send message. Please try again.",
+          message: "Failed to submit your request. Please try again.",
           severity: "error",
         });
       }
     } catch (error) {
       setSnackbar({
         open: true,
-        message: "Error sending message. Please try again.",
+        message: "Error to submit your request. Please try again.",
         severity: "error",
       });
     }
@@ -81,7 +81,7 @@ function Contact() {
   return (
     <div className="contact">
       <h1>contact me.</h1>
-      <p>you can reach me through the following links.</p>
+      <p>you can reach me by filling the form below.</p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input
