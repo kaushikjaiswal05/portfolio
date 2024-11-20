@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./contact.css";
-
 import SendIcon from "@mui/icons-material/Send";
 import { LoadingButton } from '@mui/lab';
 import Snackbar from "@mui/material/Snackbar";
@@ -19,7 +18,7 @@ function Contact() {
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
-    severity: "success", // "success" | "error" | "warning" | "info"
+    severity: "success",
   });
 
   const handleChange = (e) => {
