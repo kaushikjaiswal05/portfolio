@@ -52,10 +52,28 @@ const portfolioItems = [
       "Discover seamless logistics solutions with our fully responsive website. Built using plain HTML and CSS, it offers a user-friendly experience across all devices. Explore our services, track shipments, and manage logistics efficiently. Your reliable partner in transportation and logistics.",
     url: "https://kaushikjaiswal05.github.io/Logistics/",
   },
+  {
+    id: 7,
+    title: "Refer and Earn",
+    image: "images/refer.png",
+    description:
+      "This project consists of a Refer & Earn landing page built using the MERN stack. The frontend is developed using React.js, and the backend is powered by Express.js, connecting to a MySQL database via Prisma ORM.",
+    url: "https://github.com/kaushikjaiswal05/Refer-and-Earn",
+  },
+  {
+    id: 8,
+    title: "Green Garden Vermicompost",
+    image: "images/greengarden.jpg",
+    description:
+      "GreenGarden is a responsive and interactive website designed for a client in the agricultural sector. The project focuses on promoting sustainable farming practices, including vermicomposting and crop health management. Built using Bootstrap, HTML, CSS, and JavaScript, GreenGarden delivers a visually appealing and easy-to-navigate platform tailored for agricultural businesses.",
+    url: "https://github.com/kaushikjaiswal05/greengarden",
+  },
 ];
 
 const Portfolio = () => {
+  const [displayCount, setDisplayCount] = useState(6);
   const [selectedProject, setSelectedProject] = useState(null);
+
   useEffect(() => {
     if (selectedProject) {
       document.body.classList.add("modal-open");
@@ -72,17 +90,20 @@ const Portfolio = () => {
     setSelectedProject(null);
   };
 
+  const handleLoadMore = () => {
+    setDisplayCount((prevCount) => prevCount + 6); 
+  };
+
   return (
     <div className="portfolio">
       <div className="text">
-        {" "}
         <h2>recent works.</h2>
         <p>
           check out some of my recent web development and photography projects.
         </p>
       </div>
       <div className="portfolio-items">
-        {portfolioItems.map((item) => (
+        {portfolioItems.slice(0, displayCount).map((item) => (
           <div
             key={item.id}
             className="portfolio-item"
@@ -93,10 +114,12 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <button className="load" onClick={() => window.location.reload()}>
-        <RefreshIcon style={{ fontSize: "0.8rem", fontWeight: "bolder" }} />
-        <span>Load More</span>
-      </button>
+      {displayCount < portfolioItems.length && (
+        <button className="load" onClick={handleLoadMore}>
+          <RefreshIcon style={{ fontSize: "0.8rem", fontWeight: "bolder" }} />
+          <span>Load More</span>
+        </button>
+      )}
 
       {selectedProject && (
         <div className={`modal ${selectedProject ? "show" : ""}`}>
