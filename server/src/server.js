@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "https://portfolio-nine-rouge-22.vercel.app/api/contact",
+  origin: ["http://localhost:5173", "https://portfolio-nine-rouge-22.vercel.app"],
   methods: "GET,POST",
   credentials: true
 }));
@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Hello from the server!");
 });
 
