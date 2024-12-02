@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "https://portfolio-nine-rouge-22.vercel.app/",
+  origin: "portfolio-nine-rouge-22.vercel.app/:1 Access to fetch at 'https://portfolio-backend-kc2v.onrender.com/api/contact",
   methods: "GET,POST",
   credentials: true
 }));
