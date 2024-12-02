@@ -40,7 +40,7 @@ function Contact() {
       const response = await fetch(
         "https://portfolio-backend-kc2v.onrender.com/api/contact",
         {
-          method: ["POST", "GET"],
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
