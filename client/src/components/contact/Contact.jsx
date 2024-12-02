@@ -38,9 +38,9 @@ function Contact() {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://portfolio-backend-kc2v.onrender.com/api/contact",
+        "portfolio-backend-eosin-five.vercel.app/api/contact",
         {
-          method: "POST",
+          method: ["POST", "GET"],
           headers: {
             "Content-Type": "application/json",
           },

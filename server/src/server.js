@@ -8,7 +8,11 @@ dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://portfolio-nine-rouge-22.vercel.app/",
+  methods: "GET,POST",
+  credentials: true
+}));
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -16,6 +20,10 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL,
     pass: process.env.EMAIL_PASSWORD,
   },
+});
+
+app.get("/", (req, res) => {
+  res.send("Hello from the server!");
 });
 
 app.post("/api/contact", async (req, res) => {
