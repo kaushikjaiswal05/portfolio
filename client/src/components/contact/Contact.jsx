@@ -38,7 +38,7 @@ function Contact() {
     setLoading(true);
     try {
       const response = await fetch(
-        "portfolio-backend-eosin-five.vercel.app/api/contact",
+        "https://portfolio-backend-rust-one.vercel.app/api/contact",
         {
           method: ["POST", "GET"],
           headers: {
