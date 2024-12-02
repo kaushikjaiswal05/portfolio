@@ -38,7 +38,7 @@ function Contact() {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://localhost:3000/api/contact",
+        "https://localhost:3000/contact",
         {
           method: "POST",
           headers: {

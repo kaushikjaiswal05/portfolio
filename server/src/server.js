@@ -22,11 +22,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello from the server!");
 });
 
-app.post("/api/contact", async (req, res) => {
+app.post("/contact", async (req, res) => {
   try {
     const { name, phone, email, subject, message } = req.body;
     if (!name || !phone || !email || !subject || !message) {
