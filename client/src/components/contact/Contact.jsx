@@ -38,7 +38,7 @@ function Contact() {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://portfolio-backend-kc2v.onrender.com/api/contact",
+        "https://localhost:3000/api/contact",
         {
           method: "POST",
           headers: {
