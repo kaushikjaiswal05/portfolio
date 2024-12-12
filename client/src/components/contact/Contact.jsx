@@ -80,8 +80,8 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h1>contact me.</h1>
-      <p>you can reach me by filling the form below.</p>
+      <h1>Contact me.</h1>
+      <p>You can reach me by filling the form below.</p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input

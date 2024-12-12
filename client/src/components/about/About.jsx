@@ -25,7 +25,7 @@ function About() {
       <div className="about">
         <img ref={imgRef} src="images/myimg.jpeg" alt="" />
         <div className="info">
-          <h1>let me introduce myself</h1>
+          <h1>Let me introduce myself</h1>
           <p>
             Welcome to my portfolio! I am a Full Stack Developer and passionate
             photographer, combining technology and creativity. I graduated in

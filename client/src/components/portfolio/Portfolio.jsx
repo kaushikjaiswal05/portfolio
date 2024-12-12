@@ -5,6 +5,15 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 
 const portfolioItems = [
   {
+    id: 0,
+    title: "Tripod Technologies",
+    image:
+      "https://cdn.pixabay.com/photo/2021/07/05/12/55/computer-6389104_1280.jpg",
+    description:
+      "A modern and innovative platform showcasing cutting-edge solutions in technology and development. Built with React, Node.js, Express, and styled using Tailwind CSS, the website reflects a clean, user-friendly design paired with responsive functionality. This project demonstrates my expertise in full-stack development, creating scalable and impactful web experiences.",
+    url: "https://tripodtechnologies.com/",
+  },
+  {
     id: 1,
     title: "Real Estate Agency",
     image: "images/realestate.jpg",
@@ -91,15 +100,15 @@ const Portfolio = () => {
   };
 
   const handleLoadMore = () => {
-    setDisplayCount((prevCount) => prevCount + 6); 
+    setDisplayCount((prevCount) => prevCount + 6);
   };
 
   return (
     <div className="portfolio">
       <div className="text">
-        <h2>recent works.</h2>
+        <h2>Recent works.</h2>
         <p>
-          check out some of my recent web development and photography projects.
+          Check out some of my recent web development and photography projects.
         </p>
       </div>
       <div className="portfolio-items">

@@ -4,7 +4,7 @@ import "./techstack.css";
 function Techstack() {
   return (
     <div className="techStack">
-      <h1>my tech stack</h1>
+      <h1>My tech stack</h1>
       <div className="logo">
         <img src="images/html.png" alt="HTML5" />
         <img src="images/css.png" alt="CSS3" />
@@ -16,6 +16,7 @@ function Techstack() {
         <img src="images/mongo.png" alt="MongoDB" />
         <img src="images/mysql.png" alt="MySQL" />
         <img src="images/redux.png" alt="Redux" />
+        <img src="images/tailwind.png" alt="Tailwind" />
       </div>
     </div>
   );
