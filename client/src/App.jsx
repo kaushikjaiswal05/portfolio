@@ -13,6 +13,21 @@ import Techstack from "./components/techstack/Techstack";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  const handleScroll = () => {
+    const scrolledPercentage =
+      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+      100;
+    setShowScrollToTop(scrolledPercentage > 15);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const handleLoad = () => {
@@ -29,6 +44,10 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const options = {
     patternWidth: 400,
     patternHeight: 400,
@@ -39,7 +58,11 @@ function App() {
   };
 
   if (loading) {
-    return <div className="loader"><Loader /></div>;
+    return (
+      <div className="loader">
+        <Loader />
+      </div>
+    );
   }
 
   return (
@@ -53,6 +76,11 @@ function App() {
       <Quote />
       <Contact />
       <Footer />
+      {showScrollToTop && (
+        <div className="scroll-to-top" onClick={scrollToTop}>
+          <i className="fa fa-arrow-up"></i>
+        </div>
+      )}
     </div>
   );
 }

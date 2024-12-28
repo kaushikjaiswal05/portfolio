@@ -20,3 +20,28 @@
   height: 100%;
   z-index: -1;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #fdec4f;;
+  color: #3a3a3a;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background:#3a3a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
